@@ -27,6 +27,7 @@ header {
 
 .header-menu {
   height: 50px;
+  font-weight: 600;
 }
 
 li .menu-item {
