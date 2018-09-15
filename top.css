@@ -1,0 +1,301 @@
+html {
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+}
+
+li{
+  list-style: none;
+}
+
+li a{
+  display: inline-block;
+  color: white;
+  padding: 0 10px;
+}
+
+body {
+  background-color:#fff;
+  font-family: "Open Sans";
+  font-weight: 400;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+header {
+  width: 100%;
+}
+
+header i {
+  font-size: 1.3rem;
+  padding: 1.3rem 0;
+}
+
+.date-container {
+  height: 3.9rem;
+  border-bottom: solid 1px #aaa;
+  text-align: right;
+}
+
+.date {
+  color: #aaa;
+}
+
+.fa-calendar :before {
+  content: "\f073";
+}
+
+.title a {
+  width:50%;
+}
+
+.header-menu {
+  height: 50px;
+  background-color: #464773;
+}
+
+.header-menu ul {
+  width: 80%;
+  height: auto;
+  display: flex;
+}
+
+.header-menu a{
+  display: inline-block;
+  height: 1.4rem;
+  margin: 0 auto;
+  font-size: 1.4rem;
+  padding-top: 1.8rem;
+  padding-bottom: 1.8rem;
+  font-weight:bold ;
+}
+
+.content {
+  display: flex;
+  width: 95%;
+  margin: 0 auto;
+  padding-top: 3rem;
+}
+
+.content-left {
+  width: 70%;
+  height: auto;
+  display: inline-block;
+  padding:0 1rem;
+}
+
+.content-right {
+  width: 30%;
+  height: auto;
+  background-color: orange;
+  display: inline-block;
+  padding:0 1rem;
+}
+
+.latest {
+  width: 100%;
+  height: auto;
+}
+
+.heading {
+  border-bottom: solid 1px black;
+  margin-bottom: 2rem;
+}
+
+.box h2{
+  font-size: 1.6rem;
+  color: white;
+  background-color: #464773;
+  display: inline-block;
+  margin:0;
+  width: 8rem;
+  padding: 2px 0.3rem;
+  text-align: center;
+}
+
+.latest-content {
+  width: 100%;
+  background-color: red;
+  display: flex;
+  flex-wrap:wrap ;
+}
+
+.topic-a{
+  width: 50%;
+  height: 36rem;
+  background-color: orange;
+  display: flex;
+  flex-wrap:wrap ;
+}
+
+.topic-a a{
+  color: white;
+}
+
+.topic-b {
+  width: 50%;
+  height: 18rem;
+  background-color: green;
+  position: relative;
+}
+
+.topic1 {
+  position: relative;
+}
+
+.topic-sub {
+  width: 90%;
+}
+
+.topic-main {
+  position: absolute;
+  width: 60%;
+  left: 3rem;
+  bottom: 2rem;
+}
+
+.topic-category {
+  width: 100%;
+  float: left;
+  margin-bottom: 3px;
+}
+
+.topic-category a{
+  background-color: rgba(255,69,0,0.8);
+  display: inline-block;
+  color:white;
+  font-size: 1.3rem;
+  padding:0.3rem 1rem;
+}
+
+.topic-title a{
+  font-size: 1.6rem;
+  line-height: 2.7rem;
+}
+
+.add-comment {
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+  margin-top: 5px;
+}
+
+.topic-content {/*これで動くかどうかが分からない*/
+  opacity: 0;
+  color: #fff;
+  position: absolute;
+  margin-top: 10px;
+  z-index: 100;
+  transition: opacity .3s ease-in-out;
+  font-size: 1.3rem;
+  line-height: 2.4rem;
+}
+
+.topic-content :hover {
+  opacity: 1;
+}
+
+.topic-sub {
+  position: absolute;
+  left:1rem;
+  bottom: 2rem;
+  width: 90%;
+}
+
+.topic-sub h2 {
+  margin: 0;
+}
+
+.topic-b a{
+  font-size: 1.4rem;
+}
+
+.topic-thumbnail-main {
+  position: absolute;
+  height: 0;
+  width: 100%;
+  padding-bottom: 36rem;
+}
+
+.topic-thumbnail-sub {
+  position: absolute;
+  height: 0;
+  width: 100%;
+  padding-bottom: 18rem;
+}
+
+.new-lower{
+  width: 100%;
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap:wrap ;
+}
+
+.container {
+  width: 50%;
+  height: 100px;
+  margin-bottom: 1.7rem;
+  display: flex;
+}
+
+.lower-left {
+  width: calc(100% / 3);
+  height: 100px;
+  padding-right: 1rem;
+}
+
+.lower-right {
+  width: calc(100% * 2 / 3);
+  height: 100px;
+  padding-right: 3rem;
+}
+
+.lower-category a {
+  font-size: 1.2rem;
+  color: orange;
+}
+
+.lower-title {
+  margin: 0.5rem 0;
+}
+
+.lower-title a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #464773;
+}
+
+.lower-date {
+  text-align: left;
+  color: gray;
+}
+
+.submit-date {
+  margin: 0;
+  display: inline-block;
+  font-size: 1.2rem;
+  color: gray;
+}
+
+.load-more {
+  width: 100%;
+  padding:35px 0;
+  background-color: white;
+  text-align: center;
+}
+
+.load-more .btn{
+  background-color:green;
+  color:white;
+  border-radius:3px;
+  width: 186px;
+  padding:5px 10px;
+  text-decoration: none;
+  display:inline-block;
+}
+
+.load-more .btn :hover{
+  background-color: red;
+  opacity:1;
+}
