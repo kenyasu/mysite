@@ -12,43 +12,57 @@ li{
 
 li a{
   display: inline-block;
-  color: white;
   padding: 0 10px;
 }
 
 body {
-  background-color:rgba(231, 242, 97, 0.87);
+  background-color:#eee;
   font-family: "Open Sans";
   font-weight: 400;
   margin: 0 auto;
-  max-width: 1200px;
 }
 
-body>header {
+body > header {
   width: 100%;
   background-color: #fff;
 }
 
 header i {
   font-size: 1.3rem;
-  padding: 1.3rem 0;
 }
 
 .date-container {
-  height: 3.9rem;
-  border-bottom: solid 1px #aaa;
+  height: 4.0rem;
   text-align: right;
+  max-width: 1380px;
+  padding:0 25px;
+  margin:0 auto;
 }
 
 .date {
   color: #aaa;
+  height: 4rem;
+}
+
+.calendar {
+  line-height: 4rem;
+  font-size: 1.3rem;
 }
 
 .fa-calendar :before {
   content: "\f073";
 }
 
-.title a {
+header > .title {
+  border-top: solid 1px #aaa;
+  width: 100%;
+  height: 120px;
+  position: relative;
+}
+
+.title > a {
+  position: absolute;
+  top: -1rem;
   width:50%;
 }
 
@@ -57,47 +71,90 @@ header i {
   background-color: #464773;
 }
 
-.header-menu ul {
+.header-menu > ul {
   width: 80%;
   height: auto;
   display: flex;
 }
 
-.header-menu a{ /*真ん中に文字が来ない*/
+.header-menu .menu-item a{
   display: inline-block;
   height: 1.4rem;
   margin: 0 auto;
   font-size: 1.4rem;
-  padding-top: 1.7rem;
-  padding-bottom: 1.8rem;
-  font-weight:bold ;
+  font-weight: bold;
 }
 
-.header-menu a:hover {
+.header-menu > ul > .menu-item > a {
+  color: white;
+  padding-top: 1.7rem;
+  padding-bottom: 1.8rem;
+  transition:.3s;
+}
+
+ul > .menu-item {
+  position: relative;
+}
+
+.suki > a >.fas {
+  margin-left: 0.7rem;
+  font-size: 1rem;
+  display: inline;
+}
+
+.sub-menu {
+  padding: 0;
+  height: 49px;
+  width: 100%;
+  display: none;
+  position: absolute;
+  left: 0;
+}
+
+.header-menu > ul > .menu-hover:hover a {
   background-color: white;
   color: #464773;
+}
+
+.suki > .sub-menu > .menu-item > a {
+  height: 49px;
+  line-height: 49px;
+  display: block;
+  border-top: solid 1px white;
+  border: solid 0.2px black;
+  transition:.3s;
+  opacity: 0.5;
+}
+
+.suki:hover > .sub-menu {
+  display: block;
+}
+
+.suki:hover > .sub-menu > .menu-item > a:hover {
+  opacity: 1;
 }
 
 .content {
   background-color: #fff;
   display: flex;
+  max-width: 1380px;
   width: 90%;
   margin: 0 auto;
   padding: 3rem;
 }
 
 .content-left {
-  width: 70%;
+  width: 77%;
   height: auto;
   display: inline-block;
-  padding:0 1rem;
+  padding-right: 4rem;
 }
 
 .content-right {
-  width: 30%;
+  width: 23%;
   height: auto;
   display: inline-block;
-  padding:0 1rem;
+  padding-left: 0rem;
 }
 
 .latest {
@@ -106,22 +163,24 @@ header i {
 }
 
 .heading {
-  border-bottom: solid 1px black;
+  border-bottom: solid 2px #464773;
   margin-bottom: 2rem;
 }
 
 .box h2{
+  font-family: lato;
   font-size: 1.6rem;
   color: white;
   background-color: #464773;
   display: inline-block;
   margin:0;
-  padding: 0.2rem 1rem;
+  padding: 0.5rem 1.5rem;
   text-align: center;
 }
 
 .latest-content {
   width: 100%;
+  height: 42rem;
   background-color: black;
   display: flex;
   flex-wrap:wrap ;
@@ -129,7 +188,6 @@ header i {
 
 .topic-a{
   width: 50%;
-  height: 36rem;
   display: flex;
   flex-wrap:wrap ;
 }
@@ -140,36 +198,49 @@ header i {
 
 .topic-b {
   width: 50%;
-  height: 18rem;
 }
 
 .topic-b a{
   font-size: 1.4rem;
 }
 
-.topic1 {
-  background-color: orange;
+.topic-main {
   position: relative;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   border: solid 1px black;
+  background-image: cover;
 }
 
-.topic1:hover {
-  background-color: rgba(255,165,0,.5);
-}
-
-.topic2 {
-  background-color: green;
+.topic-sub {
   position: relative;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  border-top: solid 1px black;
   border-right: solid 1px black;
   border-bottom: solid 1px black;
 }
 
-.topic2:hover {
-  background-color: rgba(0,128,0,.5);
+.topic-thumbnail-main {
+  position: absolute;
+  height: 0;
+  width: 100%;
+  height:42rem;
+}
+
+.topic-thumbnail-sub {
+  position: absolute;
+  height: 0;
+  width: 100%;
+  height: 21rem;
+}
+
+.topic-main:hover > a > img{
+  opacity: 0.5;
+}
+
+.topic-a > .topic-sub:hover > a > img{
+  opacity: 0.5;
 }
 
 .topic-item-main {
@@ -213,7 +284,7 @@ header i {
   font-weight: normal;
 }
 
-.topic2 .topic-title a {
+.topic-sub .topic-title a {
   font-size: 1.5rem;
   font-weight: normal;
 }
@@ -243,20 +314,6 @@ header i {
   margin: 0;
 }
 
-.topic-thumbnail-main {
-  position: absolute;
-  height: 0;
-  width: 100%;
-  height:36rem;
-}
-
-.topic-thumbnail-sub {
-  position: absolute;
-  height: 0;
-  width: 100%;
-  height: 18rem;
-}
-
 .new-lower{
   width: 100%;
   margin-top: 2rem;
@@ -276,10 +333,6 @@ header i {
   width: calc(100% / 3);
   height: 100%;
   padding-right: 1rem;
-}
-
-.lower-left a:hover {
-
 }
 
 .lower-right {
@@ -351,9 +404,15 @@ header i {
   background-color: rgba(0,128,0,1);
 }
 
+.container-right {
+  width: 30rem;
+}
+
+.image-right > img{
+  width: 30rem;
+}
+
 .information {
-  background-color: yellow;
-  height: 100px;
   margin-bottom: 3rem;
 }
 
@@ -388,9 +447,14 @@ header i {
 
 .community-info {
   width: 100%;
-  height: 500px;
-  background-color: yellow;
   margin-bottom: 3rem;
+}
+
+table {
+  border:1;
+  width: 100%;
+  border-collapse: collapse;
+
 }
 
 .follow {
