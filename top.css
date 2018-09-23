@@ -15,6 +15,10 @@ li a{
   padding: 0 10px;
 }
 
+p {
+  margin:0;
+}
+
 body {
   background-color:#eee;
   font-family: "Open Sans";
@@ -319,6 +323,7 @@ ul > .menu-item {
   margin-top: 2rem;
   display: flex;
   flex-wrap:wrap ;
+  border-bottom: solid 1px rgba(68,68,68,0.2);
 }
 
 .container {
@@ -425,9 +430,20 @@ ul > .menu-item {
 
 .pp-image {
   width: 40%;
-  height: 100%;
-  background-color: blue;
-  padding: 0 1rem;
+}
+
+.pp-image > a {
+  display: block;
+  width: auto;
+  height: auto;
+}
+
+.pp-image > a > img {
+  width: 100%;
+  height: auto;
+  max-width: auto;
+  max-height: auto;
+  border: solid 1px black;
 }
 
 .pp-title {
@@ -450,11 +466,64 @@ ul > .menu-item {
   margin-bottom: 3rem;
 }
 
-table {
-  border:1;
-  width: 100%;
+table, td, tr {
+  border:0.5px solid rgba(68,68,68,0.2);
   border-collapse: collapse;
+}
 
+table img {
+  width: 23.5rem;
+}
+
+table h2 {
+  font-size: 1.4rem;
+  text-align: center;
+  margin: 0;
+  padding-top: 0.8rem;
+  padding-bottom: 0;
+}
+
+.table-title {
+  padding-bottom: 0;
+}
+
+.fb-members {
+  text-align: center;
+  font-size: 1.1rem;
+  padding: 0.8rem 0;
+}
+
+.fb-join-btn {
+  width: 23.5rem;
+  height: 9.5rem;
+  background-color: #3b5998;
+  color:white;
+  display: flex;
+  justify-content: space-around; /*左右中央揃え*/
+  align-items: center;     /*上下中央揃え*/
+}
+
+.fb-join-btn i {
+  font-size: 1.7rem;
+}
+
+.fb-join-btn p {
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding-right: 5rem;
+}
+
+tr > .blank {
+  height: 2.8rem;
+  line-height: 2.8rem;
+}
+
+td {
+  padding: 10px 15px;
+}
+
+.group-comment {
+  font-size: 1.2rem;
 }
 
 .follow {
@@ -506,31 +575,41 @@ table {
   background-color:rgba(29, 108, 242,1);
 }
 
-footer {
-  background-color: black;
-  color:white;
-  padding: 2rem 0 ;
+.footer-main {
+  background-color: #222;
+  color:#ddd;
+  width: 100%;
+  padding: 3rem;
+  box-sizing: border-box;
 }
 
 .footer-contents {
-  width: 97%;
+  width: 100%;
   margin: 0 auto;
   display: flex;
+  justify-content: space-between;
 }
 
 .footer-container {
-  width: calc(100% / 3);
-  padding: 0 1.5rem;
+  width: 31.5%;
+  font-size: 1.4rem;
 }
 
 .footer-title {
-  border-bottom: solid 1.5px white;
+  border-bottom: solid 1.5px rgba(221,221,221,0.1);
   margin-bottom: 1rem;
 }
 
 .footer-title h2{
   margin: 0.7rem 0;
   font-weight: normal;
+}
+
+.footer-container img {
+  width:auto;
+  height:auto;
+  max-width:100%;
+  max-height:100%;
 }
 
 .tags {
@@ -542,27 +621,71 @@ footer {
   padding:0.2rem 0.8rem;
   font-size: 1.3rem;
   border-radius: 0.5rem;
-  background-color: gray;
-  color: white;
+  background-color: rgba(221,221,221,0.1);
+  color: #ddd;
   margin: 0.1rem 0.1rem;
 }
 
-.cate-container {
+.tag:hover {
+  background-color: #0288d1;
+  color:white;
+}
+
+.cate-container > ul {
+  padding: 0;
+}
+
+.cate-container > ul > li > ul {
+  padding-left: 1rem
+}
+
+.cate-container > ul > li > .cate-number-item,
+.cate-container > ul > li > ul > li > .cate-number-item {
   display: flex;
-  margin-bottom: 1rem;
+  flex-wrap: wrap;
+  margin: 0.5rem 0;
 }
 
 .cate-number {
-  background-color: gold;
   height: 2.4rem;
-  width: 2.4rem;
+  width: 3rem;
   margin-right: 1rem;
+  text-align: center;
   color:black;
   line-height: 2.4rem;
   border-radius: 0.4rem;
 }
 
+.cate-skill-up .cate-number {
+  background-color: gold;
+}
+
+.cate-member .cate-number {
+  background-color: blue;
+}
+
+.find-favorite-thing .cate-number {
+  background-color: orange;
+}
+
+.cate-job .cate-number {
+  background-color: green;
+}
+
 .cate-item {
   color:white;
   line-height: 2.4rem;
+}
+
+.footer-bottom {
+  width: 100%;
+  font-size: 1.4rem;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-left: 3.5rem;
+  background-color: black;
+  color:white;
+  height: 4rem;
+  display:flex;
+  align-items: center;     /*上下中央揃え*/
 }
