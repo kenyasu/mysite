@@ -1,9 +1,10 @@
 $(function () {
   $(window).scroll(function () {
-    if ($(this).scrollTop() > 10) {
-      $('#sticky-header').addClass('is-fixed');
+    if ($(this).scrollTop() > 500) {
+      $('#sticky-header').show();
+      $('#sticky-bar').addClass('is-fixed').slideDown();
     } else {
-      $('#sticky-header').removeClass('is-fixed');
+      $('#sticky-bar').slideUp();
     }
   });
 });

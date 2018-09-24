@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" type="text/css" href="top.css">
-  <script type="text/javascript" src="jQuery/jQuery.js"></script>
+  <script type="text/javascript"
+  src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js">
+  </script>
   <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
   <title>ガクセイ基地</title>
 </head>
@@ -56,11 +58,12 @@
     </div>
   </header>
   <!-- 上固定メニュー -->
-  <div id="sticky-header" class="jquery-fix">
-    <div class="sticky-logo">
-      <img src="image/title_logo-white.png" alt="ガクセイ基地">
-    </div>
-    <div class="sticky-menu header-menu">
+  <div id="sticky-header">
+    <div id="sticky-bar">
+      <div class="sticky-logo">
+        <img src="image/title_logo-white.png" alt="ガクセイ基地">
+      </div>
+      <div class="sticky-menu header-menu">
       <ul>
         <li class="menu-item menu-hover">
           <a href="" target="_blank">スキルアップ</a>
@@ -87,7 +90,14 @@
         </li>
       </ul>
     </div>
+    </div>
   </div>
+  <!-- 上に戻るボタン -->
+  <a href="" id="back-top">
+    <div id="back-icon">
+      <i class="fa fa-angle-up"></i>
+    </div>
+  </a>
   <!-- メイン内容 -->
   <div class="content">
     <div class="content-box content-left">
