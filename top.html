@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" type="text/css" href="top.css">
+  <script type="text/javascript" src="jQuery/jQuery.js"></script>
   <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
   <title>ガクセイ基地</title>
 </head>
@@ -23,7 +24,7 @@
         <img class="title_logo" src="image/title_logo.png" alt="ガクセイ基地" height="158">
       </a>
     </div>
-    <div class="header-menu">
+    <div class="main-menu header-menu">
       <ul>
         <li class="menu-item menu-hover">
           <a href="" target="_blank">スキルアップ</a>
@@ -54,6 +55,40 @@
       </ul>
     </div>
   </header>
+  <!-- 上固定メニュー -->
+  <div id="sticky-header" class="jquery-fix">
+    <div class="sticky-logo">
+      <img src="image/title_logo-white.png" alt="ガクセイ基地">
+    </div>
+    <div class="sticky-menu header-menu">
+      <ul>
+        <li class="menu-item menu-hover">
+          <a href="" target="_blank">スキルアップ</a>
+        </li>
+        <li class="menu-item menu-hover">
+          <a href="" target="_blank">留学・海外・旅</a>
+        </li>
+        <li class="menu-item menu-hover">
+          <a href="" target="_blank">新卒就活サイト一覧</a>
+        </li>
+        <li class="menu-item menu-hover">
+          <a href="" target="_blank">就活/働く/企業訪問</a>
+        </li>
+        <li class="menu-item  menu-hover suki">
+          <a href="" target="_blank">好きを見つけよう<i class="fas fa-caret-down"></i></a>
+          <ul class="sub-menu">
+            <li class="menu-item">
+              <a href="">学生団体一覧</a>
+            </li>
+          </ul>
+        </li>
+        <li class="menu-item menu-hover">
+          <a href="" target="_blank">ガクセイ基地とは</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- メイン内容 -->
   <div class="content">
     <div class="content-box content-left">
       <div class="latest">
@@ -65,20 +100,22 @@
         <div class="latest-content">
           <div class="topic-a topic-main">
             <a href="">
-              <img src="image/paris-color.png" alt="" class="thumbnail topic-thumbnail-main">
+              <img src="image/trevi.jpg" alt="" class="thumbnail topic-thumbnail-main">
             </a>
             <article class="topic-item topic-item-main">
               <header class="entry-header">
                 <span class="topic-category"><a href="">その他の業界</a></span>
-                <h2 class="topic-title">
-                  <a href="">Tokyo Africa Collerction潜入レポートアフリカを伝えるファッションショー</a>
-                </h2>
+                <a href="">
+                  <h2 class="topic-title">
+                    Tokyo Africa Collerction潜入レポートアフリカを伝えるファッションショー
+                  </h2>
+                </a>
                 <div class="add-comment">
                   <div class="far fa-comments">
                     <a href="">Add Comment</a>
                   </div>
                 </div>
-                <div class="topic-content">
+                <div class="hidden-text">
                   <p>
                     日本からはるか10.000㎞の雄大な大地アフリカ。皆さんはどんなイメージをお持ちでしょうか。
                     &nbsp; 今回は、アフリカと日本をつなぎ、アフリカの魅力をより多くの人に伝えるために行われ
@@ -91,30 +128,16 @@
           <div class="topic-a">
             <div class="topic-b topic-sub">
               <a href="">
-                <img src="image/paris-color.png" alt="" class="thumbnail topic-thumbnail-sub">
+                <img src="image/trevi.jpg" alt="" class="thumbnail topic-thumbnail-sub">
               </a>
               <article class="topic-item topic-item-sub">
                 <header class="entry-header">
                   <span class="topic-category"><a href="">就活/働く/企業訪問</a></span>
-                  <h2 class="topic-title">
-                    <a href="">就活が大きく変わる！？採用指針廃止の影響は？（前編）</a>
-                  </h2>
-                  <div class="add-comment">
-                    <div class="far fa-comments"><a href="">Add Comment</a></div>
-                  </div>
-                </header>
-              </article>
-            </div>
-            <div class="topic-b topic-sub">
-              <a href="">
-                <img src="image/paris-color.png" alt="" class="thumbnail topic-thumbnail-sub">
-              </a>
-              <article class="topic-item topic-item-sub">
-                <header class="entry-header">
-                  <span class="topic-category"><a href="">就活/働く/企業訪問</a></span>
-                  <h2 class="topic-title">
-                      <a href="">就活が大きく変わる！？採用指針廃止の影響は？（前編）</a>
+                  <a href="">
+                    <h2 class="topic-title">
+                      就活が大きく変わる！？採用指針廃止の影響は？（前編）
                     </h2>
+                  </a>
                   <div class="add-comment">
                     <div class="far fa-comments"><a href="">Add Comment</a></div>
                   </div>
@@ -123,14 +146,16 @@
             </div>
             <div class="topic-b topic-sub">
               <a href="">
-                <img src="image/paris-color.png" alt="" class="thumbnail topic-thumbnail-sub">
+                <img src="image/trevi.jpg" alt="" class="thumbnail topic-thumbnail-sub">
               </a>
               <article class="topic-item topic-item-sub">
                 <header class="entry-header">
                   <span class="topic-category"><a href="">就活/働く/企業訪問</a></span>
-                  <h2 class="topic-title">
-                        <a href="">就活が大きく変わる！？採用指針廃止の影響は？（前編）</a>
-                      </h2>
+                  <a href="">
+                    <h2 class="topic-title">
+                      就活が大きく変わる！？採用指針廃止の影響は？（前編）
+                    </h2>
+                  </a>
                   <div class="add-comment">
                     <div class="far fa-comments"><a href="">Add Comment</a></div>
                   </div>
@@ -139,14 +164,34 @@
             </div>
             <div class="topic-b topic-sub">
               <a href="">
-                <img src="image/paris-color.png" alt="" class="thumbnail topic-thumbnail-sub">
+                <img src="image/trevi.jpg" alt="" class="thumbnail topic-thumbnail-sub">
               </a>
               <article class="topic-item topic-item-sub">
                 <header class="entry-header">
                   <span class="topic-category"><a href="">就活/働く/企業訪問</a></span>
-                  <h2 class="topic-title">
-                          <a href="">就活が大きく変わる！？採用指針廃止の影響は？（前編）</a>
-                        </h2>
+                  <a href="">
+                    <h2 class="topic-title">
+                      就活が大きく変わる！？採用指針廃止の影響は？（前編）
+                    </h2>
+                  </a>
+                  <div class="add-comment">
+                    <div class="far fa-comments"><a href="">Add Comment</a></div>
+                  </div>
+                </header>
+              </article>
+            </div>
+            <div class="topic-b topic-sub">
+              <a href="">
+                <img src="image/trevi.jpg" alt="" class="thumbnail topic-thumbnail-sub">
+              </a>
+              <article class="topic-item topic-item-sub">
+                <header class="entry-header">
+                  <span class="topic-category"><a href="">就活/働く/企業訪問</a></span>
+                  <a href="">
+                    <h2 class="topic-title">
+                      就活が大きく変わる！？採用指針廃止の影響は？（前編）
+                    </h2>
+                  </a>
                   <div class="add-comment">
                     <div class="far fa-comments"><a href="">Add Comment</a></div>
                   </div>
@@ -699,6 +744,7 @@
       <p>Copyright © 2011. Created by hanabi.co.jp</p>
     </div>
   </footer>
+  <script type="text/javascript" src="top.js"></script>
 </body>
 
 </html>
