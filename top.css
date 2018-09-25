@@ -162,7 +162,7 @@ ul > .menu-item {
   height: 5rem;
   width: 100%;
   background-color: #464773;
-  padding: 0 6rem;
+  padding: 0 3rem;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -176,25 +176,32 @@ ul > .menu-item {
 }
 
 #back-icon {
-  height: 5rem;
-  width: 5rem;
+  display: none;
+  height: 4rem;
+  width: 4rem;
   position: fixed;
   bottom: 2rem;
   right: 2rem;
   background-color: #464773;
-  font-size: 4rem;
-  color: white;
   text-align: center;
   -ms-align-items: center;
   align-items: center;
   font-weight: normal;
+  border-radius: 3px;
+  opacity: 0.8;
 }
 
-#back-icon > .fa {
+#back-icon:hover {
+  background-color: #0288d1;
+}
+
+#back-icon > a > .fa {
   display: block;
   text-height: 100%;
   vertical-align: middle;
-  line-height: 5rem;
+  line-height: 4rem;
+  font-size: 2rem;
+  color: white;
 }
 
 .content {
