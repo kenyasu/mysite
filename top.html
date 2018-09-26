@@ -13,7 +13,7 @@
 </head>
 <body>
   <header>
-    <div class="date-container">
+    <div class="date-container max-width">
       <div class="date">
         <span class="calendar">
           <i class="fa fa-calendar"></i>
@@ -22,12 +22,14 @@
       </div>
     </div>
     <div class="title">
-      <a href="">
-        <img class="title_logo" src="image/title_logo.png" alt="ガクセイ基地" height="158">
-      </a>
+      <div class="title-bar max-width">
+        <a href="">
+          <img class="title_logo" src="image/title_logo.png" alt="ガクセイ基地" height="158">
+        </a>
+      </div>
     </div>
     <div class="header-menu">
-      <div class="menu-width">
+      <div class="menu-width max-width">
         <ul>
         <li class="menu-item menu-hover">
           <a href="" target="_blank">スキルアップ</a>
@@ -62,7 +64,7 @@
   <!-- 上固定メニュー -->
   <div id="sticky-header">
     <div id="sticky-bar">
-      <div id="sticky-width">
+      <div id="sticky-width" class="max-width">
         <div class="sticky-logo">
           <img src="image/title_logo-white.png" alt="ガクセイ基地">
         </div>
@@ -103,7 +105,7 @@
     </a>
   </div>
   <!-- メイン内容 -->
-  <div class="content">
+  <div class="content max-width">
     <div class="content-box content-left">
       <div class="latest">
         <div class="heading">
@@ -112,7 +114,7 @@
           </div>
         </div>
         <div class="latest-content">
-          <div class="topic-a topic-main">
+          <div class="topic-a topic-left topic-main">
             <a href="">
               <img src="image/trevi.jpg" alt="" class="thumbnail topic-thumbnail-main">
             </a>
@@ -139,7 +141,7 @@
               </header>
             </article>
           </div>
-          <div class="topic-a">
+          <div class="topic-a topic-right">
             <div class="topic-b topic-sub">
               <a href="">
                 <img src="image/trevi.jpg" alt="" class="thumbnail topic-thumbnail-sub">
@@ -359,7 +361,7 @@
       <div class="container-right">
         <div class="heading">
           <div class="box">
-            <h2>無料診断(TOEIC,IELTS,TOEFL)</h2>
+            <h2>無料診断（TOEIC,IELTS,TOEFL）</h2>
           </div>
         </div>
         <div class="information">
@@ -596,7 +598,7 @@
   </div>
   <footer>
     <div class="footer-main">
-      <div class="footer-contents">
+      <div class="footer-contents max-width">
         <div class="footer-container">
           <div class="footer-title">
             <h2>Presented by</h2>
@@ -615,14 +617,14 @@
             <h2>Tags</h2>
           </div>
           <div class="tags">
-            <a href="" ><div class="tag">excel</div></a>
-            <a href="" ><div class="tag">ITエンジニア</div></a>
-            <a href="" ><div class="tag">Webメディア</div></a>
-            <a href="" ><div class="tag">お出かけスポット</div></a>
-            <a href="" ><div class="tag">イベント</div></a>
-            <a href="" ><div class="tag">イベントレポート</div></a>
-            <a href="" ><div class="tag">イベント運営</div></a>
-            <a href="" ><div class="tag">インターン</div></a>
+            <div class="tag"><a href="" >excel</a></div>
+            <div class="tag"><a href="" >ITエンジニア</a></div>
+            <div class="tag"><a href="" >Webメディア</a></div>
+            <div class="tag"><a href="" >お出かけスポット</a></div>
+            <div class="tag"><a href="" >イベント</a></div>
+            <div class="tag"><a href="" >イベントレポート</a></div>
+            <div class="tag"><a href="" >イベント運営</a></div>
+            <div class="tag"><a href="" >インターン</a></div>
           </div>
         </div>
         <div class="footer-container category">
@@ -755,7 +757,9 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <p>Copyright © 2011. Created by hanabi.co.jp</p>
+      <div class="footer-width max-width">
+        <p>Copyright © 2011. Created by hanabi.co.jp</p>
+      </div>
     </div>
   </footer>
   <script type="text/javascript" src="top.js"></script>
