@@ -790,9 +790,42 @@ td {
   background-color: green;
 }
 
-.cate-item {
+.cate-item > a{
   color:white;
   line-height: 2.4rem;
+}
+
+.cate-item > a{
+  transition: 0.3s;
+}
+
+.cate-item > a:hover {
+  position: relative;
+  left: 5px;
+}
+
+.cate-skill-up .cate-item > a:hover {
+  position: relative;
+  left: 5px;
+  color: gold;
+}
+
+.cate-member .cate-item > a:hover {
+  position: relative;
+  left: 5px;
+  color: blue;
+}
+
+.find-favorite-thing .cate-item > a:hover {
+  position: relative;
+  left: 5px;
+  color: orange;
+}
+
+.cate-job .cate-item > a:hover {
+  position: relative;
+  left: 5px;
+  color: green;
 }
 
 .footer-bottom {
