@@ -13,7 +13,7 @@
 </head>
 <body>
   <header>
-    <div class="date-container max-width">
+    <div class="date-container max-width disappear1023">
       <div class="date">
         <span class="calendar">
           <i class="fa fa-calendar"></i>
@@ -21,48 +21,90 @@
         </span>
       </div>
     </div>
-    <div class="title">
+    <div class="title disappear1023">
       <div class="title-bar max-width">
         <a href="">
-          <img class="title_logo" src="image/title_logo.png" alt="ガクセイ基地" height="158">
+          <img class="title_logo" src="image/title_logo.png" alt="ガクセイ基地">
         </a>
       </div>
     </div>
-    <div class="header-menu">
+    <div class="header-menu disappear1023">
       <div class="menu-width max-width">
         <ul>
-        <li class="menu-item menu-hover">
-          <a href="" target="_blank">スキルアップ</a>
-        </li>
-        <li class="menu-item menu-hover">
-          <a href="" target="_blank">留学・海外・旅</a>
-        </li>
-        <li class="menu-item menu-hover">
-          <a href="" target="_blank">新卒就活サイト一覧</a>
-        </li>
-        <li class="menu-item menu-hover">
-          <a href="" target="_blank">就活/働く/企業訪問</a>
-        </li>
-        <li class="menu-item  menu-hover suki">
-          <a href="" target="_blank">好きを見つけよう<i class="fas fa-caret-down"></i></a>
-          <ul class="sub-menu">
-            <li class="menu-item">
-              <a href="">学生団体一覧</a>
-            </li>
-          </ul>
-        </li>
-        <li class="menu-item menu-hover">
-          <a href="" target="_blank">ガクセイ基地とは</a>
-        </li>
-        <li class="menu-item menu-hover">
-          <a href="" target="_blank"><span class="fa fa-search"></span></a>
-        </li>
-      </ul>
+          <li class="menu-item menu-hover">
+            <a href="" target="_blank">スキルアップ</a>
+          </li>
+          <li class="menu-item menu-hover">
+            <a href="" target="_blank">留学・海外・旅</a>
+          </li>
+          <li class="menu-item menu-hover">
+            <a href="" target="_blank">新卒就活サイト一覧</a>
+          </li>
+          <li class="menu-item menu-hover">
+            <a href="" target="_blank">就活/働く/企業訪問</a>
+          </li>
+          <li class="menu-item  menu-hover suki">
+            <a href="" target="_blank">好きを見つけよう<i class="fas fa-caret-down"></i></a>
+            <ul class="sub-menu">
+              <li class="menu-item">
+                <a href="">学生団体一覧</a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-item menu-hover">
+            <a href="" target="_blank">ガクセイ基地とは</a>
+          </li>
+          <li class="menu-item menu-hover">
+            <a href="" target="_blank"><span class="fa fa-search"></span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="header-menu appear1023">
+      <div class="fixed-header">
+        <div class="menu-drawer">
+          <input id="nav-input" type="checkbox" class="nav-unshown">
+          <label id="nav-open" for="nav-input"><span></span></label>
+          <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+          <div id="nav-content">
+            <ul class="side-menu">
+              <li class="menu-item menu-hover">
+                <a href="" target="_blank">スキルアップ</a>
+              </li>
+              <li class="menu-item menu-hover">
+                <a href="" target="_blank">留学・海外・旅</a>
+              </li>
+              <li class="menu-item menu-hover">
+                <a href="" target="_blank">新卒就活サイト一覧</a>
+              </li>
+              <li class="menu-item menu-hover">
+                <a href="" target="_blank">就活/働く/企業訪問</a>
+              </li>
+              <li class="menu-item menu-hover suki-side">
+                <a href="" target="_blank">好きを見つけよう<i class="fas fa-caret-down"></i></a>
+                <ul class="sub-menu">
+                  <li class="menu-item">
+                    <a href="">学生団体一覧</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item menu-hover side-about">
+                <a href="" target="_blank">ガクセイ基地とは</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="menu-logo">
+          <img src="image/title_logo-white.png" alt="ガクセイ基地">
+        </div>
+        <div class="header-search menu-item">
+        <a href="" target="_blank"><span class="fa fa-search"></span></a>
+      </div>
       </div>
     </div>
   </header>
   <!-- 上固定メニュー -->
-  <div id="sticky-header">
+  <div id="sticky-header" class="disappear1023">
     <div id="sticky-bar">
       <div id="sticky-width" class="max-width">
         <div class="sticky-logo">
@@ -114,7 +156,7 @@
           </div>
         </div>
         <div class="latest-content">
-          <div class="topic-a topic-left topic-main">
+          <div class="topic-a topic-left topic-main topic768">
             <a href="">
               <img src="image/trevi.jpg" alt="" class="thumbnail topic-thumbnail-main">
             </a>
@@ -142,7 +184,7 @@
             </article>
           </div>
           <div class="topic-a topic-right">
-            <div class="topic-b topic-sub">
+            <div class="topic-b topic-sub topic768">
               <a href="">
                 <img src="image/trevi.jpg" alt="" class="thumbnail topic-thumbnail-sub">
               </a>
@@ -160,7 +202,7 @@
                 </header>
               </article>
             </div>
-            <div class="topic-b topic-sub">
+            <div class="topic-b topic-sub topic768">
               <a href="">
                 <img src="image/trevi.jpg" alt="" class="thumbnail topic-thumbnail-sub">
               </a>
@@ -178,7 +220,7 @@
                 </header>
               </article>
             </div>
-            <div class="topic-b topic-sub">
+            <div class="topic-b topic-sub topic768">
               <a href="">
                 <img src="image/trevi.jpg" alt="" class="thumbnail topic-thumbnail-sub">
               </a>
@@ -196,7 +238,7 @@
                 </header>
               </article>
             </div>
-            <div class="topic-b topic-sub">
+            <div class="topic-b topic-sub topic768">
               <a href="">
                 <img src="image/trevi.jpg" alt="" class="thumbnail topic-thumbnail-sub">
               </a>
@@ -221,7 +263,7 @@
         <div class="container">
           <div class="lower-left">
             <a href="">
-              <img src="image/roma.jpg" alt="イメージ" class="lower-image" width="130" height="86">
+              <img src="image/roma.jpg" alt="イメージ" class="lower-image">
             </a>
           </div>
           <div class="lower-right">
@@ -236,7 +278,9 @@
         </div>
         <div class="container">
           <div class="lower-left">
-            <img src="image/roma.jpg" alt="イメージ" class="lower-image" width="130" height="86">
+            <a href="">
+              <img src="image/roma.jpg" alt="イメージ" class="lower-image">
+            </a>
           </div>
           <div class="lower-right">
             <div class="lower-category"><a href="">HOW TO 学生生活</a></div>
@@ -251,7 +295,7 @@
         <div class="container">
             <div class="lower-left">
               <a href="">
-                  <img src="image/roma.jpg" alt="イメージ" class="lower-image" width="130" height="86">
+                  <img src="image/roma.jpg" alt="イメージ" class="lower-image">
                 </a>
             </div>
             <div class="lower-right">
@@ -267,7 +311,7 @@
         <div class="container">
             <div class="lower-left">
               <a href="">
-                    <img src="image/roma.jpg" alt="イメージ" class="lower-image" width="130" height="86">
+                    <img src="image/roma.jpg" alt="イメージ" class="lower-image">
                   </a>
             </div>
             <div class="lower-right">
@@ -283,7 +327,7 @@
         <div class="container">
           <div class="lower-left">
             <a href="">
-              <img src="image/roma.jpg" alt="イメージ" class="lower-image" width="130" height="86">
+              <img src="image/roma.jpg" alt="イメージ" class="lower-image">
             </a>
           </div>
           <div class="lower-right">
@@ -303,7 +347,7 @@
         <div class="container">
             <div class="lower-left">
               <a href="">
-                        <img src="image/roma.jpg" alt="イメージ" class="lower-image" width="130" height="86">
+                        <img src="image/roma.jpg" alt="イメージ" class="lower-image">
                       </a>
             </div>
             <div class="lower-right">
@@ -319,7 +363,7 @@
         <div class="container">
             <div class="lower-left">
               <a href="">
-                <img src="image/roma.jpg" alt="イメージ" class="lower-image" width="130" height="86">
+                <img src="image/roma.jpg" alt="イメージ" class="lower-image">
               </a>
             </div>
             <div class="lower-right">
@@ -335,7 +379,7 @@
         <div class="container">
           <div class="lower-left">
             <a href="">
-              <img src="image/roma.jpg" alt="イメージ" class="lower-image" width="130" height="86">
+              <img src="image/roma.jpg" alt="イメージ" class="lower-image">
             </a>
           </div>
           <div class="lower-right">
@@ -500,72 +544,73 @@
           </div>
         </div>
       </div>
-      <div class="container-right fb">
-        <div class="heading">
-          <div class="box">
-            <h2>FBだけの非公開情報（承認制）</h2>
+      <div class="container-right container-fb-follow">
+        <div class="container-fb">
+          <div class="heading">
+            <div class="box">
+              <h2>FBだけの非公開情報（承認制）</h2>
+            </div>
           </div>
-        </div>
-        <div class="community-info">
-          <table border="1" cellspacing="0" cellpadding="0">
-            <tbody>
+          <div class="community-info">
+            <table border="1" cellspacing="0" cellpadding="0">
+              <tbody>
+                <tr>
+                  <td class="blank"></td>
+                </tr>
+                <tr>
+                  <td>
+                    <table>
+                      <tr>
+                        <td>
+                          <div>
+                            <img src="image/recommended-event.png" alt="recommended-event">
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="table-title">
+                          <h2>ガクセイ基地推奨イベント</h2>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="fb-members">
+                          <p>Facebook Group : 674 members</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <a href="">
+                            <div class="fb-join-btn">
+                              <div><i class="fab fa-facebook-square"></i></div>
+                              <div><p>Join Group</p></div>
+                            </div>
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="group-comment">
+                          <p>
+                            ＊大学生・専門学校生のみグループに入れます
+                            【イベント紹介グループ】
+                            「イベントに参加したい。けれどどうやって良いイベントを探せばいいの？」
+                            「イベントにあまり参加したことない！」
+                            「そもそもイベントを知る機会が少ない！」
+                            そんな学生の声から、このサービスは生まれました。
+                            イベントへの参...
+                          </p>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
               <tr>
                 <td class="blank"></td>
               </tr>
-              <tr>
-                <td>
-                  <table>
-                    <tr>
-                      <td>
-                        <div>
-                          <img src="image/recommended-event.png" alt="recommended-event">
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="table-title">
-                        <h2>ガクセイ基地推奨イベント</h2>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="fb-members">
-                        <p>Facebook Group : 674 members</p>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <a href="">
-                          <div class="fb-join-btn">
-                            <div><i class="fab fa-facebook-square"></i></div>
-                            <div><p>Join Group</p></div>
-                          </div>
-                        </a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="group-comment">
-                        <p>
-                          ＊大学生・専門学校生のみグループに入れます
-                          【イベント紹介グループ】
-                          「イベントに参加したい。けれどどうやって良いイベントを探せばいいの？」
-                          「イベントにあまり参加したことない！」
-                          「そもそもイベントを知る機会が少ない！」
-                          そんな学生の声から、このサービスは生まれました。
-                          イベントへの参...
-                        </p>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </td>
-            </tr>
-            <tr>
-              <td class="blank"></td>
-            </tr>
-          </table>
+            </table>
+          </div>
         </div>
-      </div>
-      <div class="container-right follow-me">
+        <div class="follow-me">
         <div class="heading">
           <div class="box">
             <h2>Follow Me</h2>
@@ -593,6 +638,7 @@
             </a>
           </div>
         </div>
+      </div>
       </div>
     </div>
   </div>
