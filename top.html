@@ -54,8 +54,15 @@
           <li class="menu-item menu-hover">
             <a href="" target="_blank">ガクセイ基地とは</a>
           </li>
-          <li class="menu-item menu-hover">
-            <a href="" target="_blank"><span class="fa fa-search"></span></a>
+          <li class="menu-item menu-hover menu-search">
+            <span class="fa fa-search"></span>
+            <span class="fas fa-times"></span>
+            <div class="search-window">
+              <form id="form1" method="get" action="" target="_blank">
+                <input id="sbox1" type="text" name="s" value placeholder="Type here to search...">
+                <button type="submit" id="sbtn1"><i class="fas fa-search"></i></button>
+              </form>
+            </div>
           </li>
         </ul>
       </div>
@@ -97,9 +104,16 @@
         <div class="menu-logo">
           <img src="image/title_logo-white.png" alt="ガクセイ基地">
         </div>
-        <div class="header-search menu-item">
-        <a href="" target="_blank"><span class="fa fa-search"></span></a>
-      </div>
+        <div class="header-search menu-item menu-search">
+          <span class="fa fa-search"></span>
+          <span class="fas fa-times"></span>
+          <div class="search-window">
+            <form id="form1" method="get" action="" target="_blank">
+              <input id="sbox1" type="text" name="s" value placeholder="Type here to search...">
+              <button type="submit" id="sbtn1"><i class="fas fa-search"></i></button>
+            </form>
+          </div>
+        </div>
       </div>
     </div>
   </header>

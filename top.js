@@ -29,4 +29,16 @@ $(function () {
     }, function(){
       $(this).next('ul').slideUp();
     })
+
+  $('.fa-search').click(function(){
+    $(this).css('display','none');
+    $(this).next('span').addClass('cancel-search');
+    $('.search-window').slideDown();
+  })
+
+  $('.fa-times').click(function(){
+    $(this).removeClass('cancel-search');
+    $('.fa-search').css('display','inline-block');
+    $('.search-window').slideUp();
+  })
 });
